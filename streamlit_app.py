@@ -39,6 +39,7 @@ streamlit.dataframe(fruityvice_normalized)
 
 
 import snowflake.connector
+my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 
 streamlit.header("The Fruit load list contains:")
 def get_fruit_load_list():
