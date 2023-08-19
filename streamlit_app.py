@@ -47,3 +47,4 @@ streamlit.text("what Fruit would you like to add?")
 add_my_fruit = streamlit.text_input('what Fruit would you like to add?','banana')
 streamlit.write('Thanks for adding', add_my_fruit)
 
+my_cur.execute("insert into FRUIT_LOAD_LIST values('from streamlit')");
